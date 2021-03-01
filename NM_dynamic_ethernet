@@ -1,1 +1,14 @@
+# For CetOS
+# Configuring Dynamic Ethernet client with network Manager
 
+> nmcli con show MyEthernet     # Shows connection details
+> nmcli con edit MyEthernet
+- print ipv4    # Shows details of connection
+- set ipv4.method auto # then save and quit
+> nmcli con down MyEthernet
+> nmcli con up MyEthernet
+> nmcli con add con-name otherNet ifname enp0s3 type ethernet
+> nmcli d
+> nmcli con up otherNet
+> nmcli d
+> nmcli con up MyEthernet 
