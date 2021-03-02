@@ -2,7 +2,7 @@
 # Configuring Dynamic Ethernet client with network Manager
 
 > nmcli con show MyEthernet     # Shows connection details
-> nmcli con edit MyEthernet
+> nmcli con edit MyEthernet     # Edit connection MyEthernet
 - print ipv4    # Shows details of connection
 - set ipv4.method auto # then save and quit
 > nmcli con down MyEthernet
