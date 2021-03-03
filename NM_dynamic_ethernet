@@ -3,11 +3,11 @@
 
 > nmcli con show MyEthernet     # Shows connection details
 > nmcli con edit MyEthernet     # Edit connection MyEthernet
-- print ipv4    # Shows details of connection
-- set ipv4.method auto # then save and quit
-> nmcli con down MyEthernet
-> nmcli con up MyEthernet
-> nmcli con add con-name otherNet ifname enp0s3 type ethernet
+- print ipv4                    # Shows details of connection
+- set ipv4.method auto          # then save and quit
+> nmcli con down MyEthernet     # Shutdown MyEthernet connection
+> nmcli con up MyEthernet       # Start MyEthernet connection
+> nmcli con add con-name otherNet ifname enp0s3 type ethernet     # add new connection
 > nmcli d
 > nmcli con up otherNet
 > nmcli d
