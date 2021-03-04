@@ -9,6 +9,6 @@
 > nmcli con up MyEthernet       # Start MyEthernet connection
 > nmcli con add con-name otherNet ifname enp0s3 type ethernet     # add new connection
 > nmcli d
-> nmcli con up otherNet
+> nmcli con up otherNet         # up otherNet
 > nmcli d
 > nmcli con up MyEthernet 
