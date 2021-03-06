@@ -11,4 +11,4 @@
 > nmcli d
 > nmcli con up otherNet         # up otherNet
 > nmcli d
-> nmcli con up MyEthernet 
+> nmcli con up MyEthernet       # up MyEthernet
