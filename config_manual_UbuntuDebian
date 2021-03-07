@@ -23,8 +23,15 @@
 > ip a
 
 
+# Configure WiFi
 
-
+> sudo nano /etc/network/interfaces
+-- allow-hotplug wlxxxx     # Put Wifi Adapter name
+-- iface wlxxxx inet dhcp
+-- wpa-ssid MyNet
+-- wpa-psk "SecretKey!" --> save --> exit
+> sudo ifup wlxxxx
+> ip a
 
 
 
