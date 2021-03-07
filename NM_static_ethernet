@@ -1,0 +1,22 @@
+# For CetOS
+# Configuring Static client with network Manager
+
+> nm-connection-editor   --> edit  # manual 10.0.2.7/ 255.255.255.0/ 10.0.2.1
+                                   # DNS 10.0.2.1 --> save -->  
+> nmcli con show MyEthernet
+> nmcli con edit MyEthernet 
+
+-- remove ipv4.address
+-- set ipv4.addresses 10.0.2.8/24 --> yes
+-- set.ipv4.gateway 10.0.2.1
+-- set ipve.dns 10.0.2.1 --> save --> quite
+
+> nmcli con down MyEthernet
+> nmcli con up MyEthernet
+> nmcli con show MyEthernet
+ping google.com
+OR
+
+> nmcli con mod MyEthernet ipv4.addresses 10.0.2.9 ipv4.gateway 10.0.2.1 ipv4.dns 10.0.2.1 --> down --> up
+
+> ip a
