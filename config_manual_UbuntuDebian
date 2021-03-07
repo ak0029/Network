@@ -1,0 +1,32 @@
+# Locate adapter settings
+> sudo nano etc/networkManager/NetworkManager.conf
+-- managed = false
+
+# Configure Dynamic address using DHCP
+> sudo nano etc/Network/interfaces
+# add lines @ bottom
+-- auto enp0s3/ allow -hotplug enp0s3
+-- iface enp0s3 inet dhcp --> save --> exit
+> sudo ifup enp0s3      # interface up
+> ip a
+
+# Config a static client
+> sudo ifdown enp0s3
+> sudo nano /etc/Network/interfaces
+-- iface enp0s3 inet dhcp
+-- iface enp0s3 inet static
+-- address 10.0.2.32
+-- netmask 255.255.255.0
+-- gateway 10.0.2.1
+-- dns-nameservers 10.0.2.1 --> save --> quit
+> sudo ifup enp0s3
+> ip a
+
+
+
+
+
+
+
+
+
