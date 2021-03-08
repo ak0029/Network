@@ -11,7 +11,7 @@
 > ip a
 
 # Config a static client
-> sudo ifdown enp0s3
+> sudo ifdown enp0s3          # down enp0s3 adapter
 > sudo nano /etc/Network/interfaces
 -- iface enp0s3 inet dhcp
 -- iface enp0s3 inet static
