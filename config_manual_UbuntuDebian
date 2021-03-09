@@ -19,7 +19,7 @@
 -- netmask 255.255.255.0
 -- gateway 10.0.2.1
 -- dns-nameservers 10.0.2.1 --> save --> quit
-> sudo ifup enp0s3
+> sudo ifup enp0s3      #up enp0s3 connection
 > ip a
 
 
