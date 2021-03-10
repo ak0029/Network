@@ -30,7 +30,7 @@
 -- iface wlxxxx inet dhcp
 -- wpa-ssid MyNet
 -- wpa-psk "SecretKey!" --> save --> exit
-> sudo ifup wlxxxx
+> sudo ifup wlxxxx          # make on connection wlxxxx
 > ip a
 
 
