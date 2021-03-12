@@ -14,7 +14,7 @@
 > sudo ifdown enp0s3          # down enp0s3 adapter
 > sudo nano /etc/Network/interfaces
 -- iface enp0s3 inet dhcp
--- iface enp0s3 inet static
+-- iface enp0s3 inet static     # set as static
 -- address 10.0.2.32
 -- netmask 255.255.255.0
 -- gateway 10.0.2.1
