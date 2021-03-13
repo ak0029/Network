@@ -31,7 +31,7 @@
 -- wpa-ssid MyNet
 -- wpa-psk "SecretKey!" --> save --> exit
 > sudo ifup wlxxxx          # make on connection wlxxxx
-> ip a
+> ip a                      # list all
 
 
 
